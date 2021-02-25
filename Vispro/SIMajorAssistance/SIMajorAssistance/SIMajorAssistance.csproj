@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE8A897C-AADC-42C8-A01E-F437AF75657E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SIMajorAssistance</RootNamespace>
+    <AssemblyName>SIMajorAssistance</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CriteriaDetermination.cs" />
+    <Compile Include="CheckHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckHistory.Designer.cs">
+      <DependentUpon>CheckHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEntry.Designer.cs">
+      <DependentUpon>NewEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question5.Designer.cs">
+      <DependentUpon>Question5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question4.Designer.cs">
+      <DependentUpon>Question4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question3.Designer.cs">
+      <DependentUpon>Question3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question2.Designer.cs">
+      <DependentUpon>Question2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question1.Designer.cs">
+      <DependentUpon>Question1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAgreement.Designer.cs">
+      <DependentUpon>TermsAgreement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValueGetSet.cs" />
+    <Compile Include="Vektor.cs" />
+    <Compile Include="WP.cs" />
+    <EmbeddedResource Include="CheckHistory.resx">
+      <DependentUpon>CheckHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEntry.resx">
+      <DependentUpon>NewEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question5.resx">
+      <DependentUpon>Question5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question4.resx">
+      <DependentUpon>Question4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question3.resx">
+      <DependentUpon>Question3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question2.resx">
+      <DependentUpon>Question2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question1.resx">
+      <DependentUpon>Question1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsAgreement.resx">
+      <DependentUpon>TermsAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Res Picture\Mafuyu Solution.png" />
+    <None Include="Resources\Mfy {Programs}.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\Mafuyu Solution.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

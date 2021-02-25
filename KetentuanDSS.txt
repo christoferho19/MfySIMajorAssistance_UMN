@@ -1,0 +1,67 @@
+KRITERIA (Input)
+=================
+
+1. Nilai 
+
+DB
+- Database System 
+- Dasar Pemrograman 
+- Algoritma & Struktur Data
+- Mobile Programming
+- Web Programming
+- Visual Programming
+
+IT GOV 
+- Management Information System 
+- Proses Bisnis Korporat 
+- Akuntansi
+- Pengantar Bisnis Management
+- Organizational Behaviour
+- Interpersonal Communication 
+- Security & Computer Network 
+
+BIG DATA
+- Probabilitas dan Statistika
+- Data Analysis 
+- Data Warehouse
+- Database System 
+- Algoritma & Struktur Data
+
+ERP 
+- Dasar Pemrograman
+- Supply Chain Management
+- Algoritma & Struktur Data
+- Proses Bisnis Korporat
+- ERP 
+
+2. Kategori Bidang Interest 
+
+- DB : Teknis + Analitical 
+- ITG : Manajerial + Analitical 
+- BD: Teknis + Analitical 
+- ERP : Teknis + Manajerial 
+
+3. IPK 
+
+4. Interest Peminatan 1 
+
+5. Interest Peminatan 2 
+
+6. Bidang Pekerjaan : Developer? Database Administrator? Auditor? dan lain-lain.
+
+Output
+========
+
+1. Point masing-masing peminatan 
+
+cth : 
+
+IT GOV 30.2
+DATABASE 19.2
+..
+
+2. Output masing-masing peminatan ditambahin deskripsi apa yang akan dipelajari, bisa jadi apa nantinya, selesai perkuliahan bisa bikin apa.. 
+
+METODE = WP
+DEVELOP = C# .NET (gausah DB)
+Google form buat contoh data.
